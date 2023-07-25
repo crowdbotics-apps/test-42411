@@ -1,16 +1,9 @@
-import React from "react"
-import {
-  View,
-  Image,
-  Text,
-  ScrollView,
-  SafeAreaView,
-  StyleSheet
-} from "react-native"
+import { Pressable } from "react-native";
+import React from "react";
+import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 
 const WelcomeScreen = () => {
-  return (
-    <SafeAreaView style={styles.container}>
+  return <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.group} />
         <View style={styles.group}>
@@ -20,10 +13,9 @@ const WelcomeScreen = () => {
           </Text>
         </View>
         <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
-      </ScrollView>
-    </SafeAreaView>
-  )
-}
+      <Pressable><View style={styles.BziXIfTc}></View></Pressable></ScrollView>
+    </SafeAreaView>;
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -58,7 +50,13 @@ const styles = StyleSheet.create({
     color: "#828AB0",
     fontWeight: 700,
     marginBottom: 20
+  },
+  BziXIfTc: {
+    left: 0,
+    top: 0,
+    width: 90,
+    height: 90,
+    backgroundColor: "#7c2121"
   }
-})
-
-export default WelcomeScreen
+});
+export default WelcomeScreen;
